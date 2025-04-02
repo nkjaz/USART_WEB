@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义样式 */
+@layer base {
+  body {
+    @apply bg-base-100 text-base-content min-h-screen;
+  }
+}
+
+@layer components {
+  .serial-card {
+    @apply card bg-base-200 shadow-xl;
+  }
+
+  .serial-card-title {
+    @apply card-title text-primary;
+  }
+
+  .serial-panel {
+    @apply rounded-box p-4 bg-base-200;
+  }
+
+  .log-container {
+    @apply p-2 rounded-box bg-base-300;
+  }
+
+  .log-entry {
+    @apply p-2 my-1 rounded-lg;
+  }
+
+  .log-entry-rx {
+    @apply bg-accent text-accent-content;
+  }
+
+  .log-entry-tx {
+    @apply bg-secondary text-secondary-content;
+  }
+}
